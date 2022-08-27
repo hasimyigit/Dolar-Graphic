@@ -1,0 +1,18 @@
+// @import './bootstrap_overrides.scss';
+// @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+// @import './style.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body,#root{
+    height: 100%;
+}
+
+body{
+    background-color:#262930;
+    color:#fff;
+}

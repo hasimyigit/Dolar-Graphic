@@ -1,0 +1,52 @@
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.container .line {
+    width: 1px;
+    height: 100%;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translateX(var(--position));
+}
+.container > div {
+    height: 50%;
+}
+.sparkline {
+    position: relative;
+    left: -9px;
+    bottom: -9px;
+    overflow: hidden;
+    width: var(--width)
+}
+.headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.headline h1 {
+    font-size: 10vh;
+}
+.headline p {
+    font-size: 5vh;
+    margin-top: 1rem;
+    opacity: .7;
+}
+@media (max-width: 700px) {
+    .headline h1 {
+        font-size: 6vh;
+    }
+    .headline p {
+        font-size: 2.5vh;
+    }
+}
